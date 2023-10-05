@@ -742,6 +742,28 @@ address {
   .portfolio-item {
     flex-basis: calc((100% - 24px) / 2);
   }
+  .footer .container {
+    gap: 72px 24px;
+    align-items: baseline;
+    justify-content: flex-start;
+  }
+  .logo-footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .footer-text {
+    width: 264px;
+    padding-left: 0;
+  }
+  .subscribe-block {
+    align-items: flex-start;
+  }
+  .subscribe-form {
+    flex-direction: row;
+  }
+  .subscribe-input {
+    width: 264px;
+  }
 }
 /* Desktop screen */
 @media screen and (min-width: 1200px) {
@@ -768,6 +790,16 @@ address {
   }
   .portfolio-item {
     flex-basis: calc((100% - 48px) / 3);
+  }
+  .footer .container {
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+  .logo-footer-block {
+    margin-right: 120px;
+  }
+  .social-media-block {
+    margin-right: 80px;
   }
 }
 
