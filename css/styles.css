@@ -53,11 +53,17 @@ img {
 .section {
   padding: 120px 0;
 }
+
+/* Phone screen */
 .container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px 0 15px;
+  /* width: 1158px; */
+  max-width: 320px;
+  /* margin: 0 auto; */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 16px 0 16px;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -94,7 +100,6 @@ img {
   gap: 40px;
   justify-content: center;
 }
-
 .nav-link {
   position: relative;
   display: inline-block;
@@ -124,7 +129,6 @@ img {
   color: var(--OCEAN);
   text-decoration: underline;
 }
-
 .logo {
   display: inline-block;
   margin-right: 76px;
@@ -139,7 +143,6 @@ img {
 .logo-accent {
   color: var(--NAVY-BLUE);
 }
-
 address {
   font-style: normal;
 }
@@ -153,7 +156,6 @@ address {
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--OCEAN);
@@ -175,7 +177,6 @@ address {
   max-width: 1440px;
   margin: 0 auto;
 }
-
 .hero-title {
   max-width: 496px;
   margin-bottom: 48px;
@@ -207,21 +208,29 @@ address {
 
 /*Section advanteges*/
 
+.advantege-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 24px; */
+  gap: 72px;
+}
+.advantege-item {
+  /* width: calc((100%-72px) / 4); */
+  width: 100%;
+}
 .advantege-title {
   margin-bottom: 8px;
   color: var(--NAVY-BLUE);
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2; /* 120% */
+  /* font-size: 20px;
+  font-weight: 500; */
+  font-size: 36px;
+  /* line-height: 1.2; 120% */
+  line-height: 1.11; /* 111.111% */
   letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
 }
-.advantege-list {
-  display: flex;
-  gap: 24px;
-}
-.advantege-item {
-  width: calc((100%-72px) / 4);
-}
+
 .icon-box {
   display: flex;
   justify-content: center;
@@ -243,6 +252,7 @@ address {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
 }
+
 /*Section Our team*/
 .our-team-section {
   padding: 120px 0;
@@ -259,8 +269,10 @@ address {
 }
 .team-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
+  /* gap: 24px; */
+  gap: 72px;
 }
 .team-item {
   border-radius: 0px 0px 4px 4px;
@@ -312,8 +324,8 @@ address {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
 }
-/*Section Our portfolio*/
 
+/*Section Our portfolio*/
 .portfolio {
   margin-bottom: 72px;
   color: var(--NAVY-BLUE);
@@ -326,11 +338,13 @@ address {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
-  row-gap: 48px;
+  /* gap: 24px;
+  row-gap: 48px; */
+  gap: 48px;
 }
 .portfolio-item {
-  flex-basis: calc((100% - 48px) / 3);
+  /* flex-basis: calc((100% - 48px) / 3); */
+  flex-basis: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item:hover,
@@ -365,7 +379,6 @@ address {
   border: 1px solid var(--CORNFLOWER);
   border-top: none;
 }
-
 .portfolio-title {
   margin-bottom: 8px;
   color: var(--NAVY-BLUE);
@@ -379,6 +392,7 @@ address {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
 }
+
 /*Footer*/
 .footer {
   padding: 100px 0;
@@ -387,11 +401,17 @@ address {
 }
 .footer .container {
   display: flex;
-  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 72px;
+  justify-content: center;
+  /* align-items: baseline; */
 }
 .logo-footer {
   margin-bottom: 16px;
   display: inline-block;
+  padding-left: 102px;
+  padding-right: 103px;
+
   color: var(--IRIS);
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -404,9 +424,11 @@ address {
   color: var(--CLOUD);
 }
 .footer-text {
-  width: 264px;
+  /* width: 264px; */
+  width: 288px;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
+  padding-left: 16px;
 }
 .social-icons-list-footer {
   display: flex;
@@ -434,25 +456,37 @@ address {
   margin-bottom: 16px;
 }
 .logo-footer-block {
-  margin-right: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  /* margin-right: 120px; */
 }
 .social-media-block {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  margin-right: 80px;
+  /* margin-right: 80px; */
 }
 .icon-footer {
   fill: var(--CLOUD);
 }
-
+.subscribe-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .subscribe-form {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 24px;
 }
-
 .subscribe-input {
-  width: 264px;
+  /* width: 264px; */
+  width: 288px;
   height: 40px;
   padding: 8px 16px;
   border-radius: 4px;
@@ -484,11 +518,11 @@ address {
   cursor: pointer;
   border: none;
 }
-
 .subscribe-icon {
   fill: var(--WHITE);
   margin-left: 16px;
 }
+
 /*Modal*/
 .backdrop {
   position: fixed;
@@ -529,7 +563,6 @@ address {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .backdrop.is-hidden .modal {
   transform: scale(0);
 }
@@ -550,18 +583,15 @@ address {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
-
 .modal-close:hover,
 .modal-close:focus {
   background-color: var(--OCEAN);
   border: none;
 }
-
 .modal-close-icon {
   fill: var(--NAVY-BLUE);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal-close:hover .modal-close-icon,
 .modal-close:focus .modal-close-icon {
   fill: var(--WHITE);
@@ -680,4 +710,70 @@ address {
 .modal-button {
   display: block;
   margin: 0 auto;
+}
+
+/* Tablet screen */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 736px;
+  }
+  .advantege-title {
+    text-align: start;
+  }
+  .advantege-list {
+    gap: 24px;
+    row-gap: 72px;
+  }
+  .advantege-item {
+    flex-basis: calc((100%-24px) / 2);
+  }
+  .team-list {
+    gap: 24px;
+    row-gap: 64px;
+  }
+  .team-item {
+    flex-basis: calc((100%-24px) / 2);
+  }
+  .portfolio-list {
+    flex-direction: row;
+    gap: 24px;
+    row-gap: 72px;
+  }
+  .portfolio-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+/* Desktop screen */
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+  }
+  .advantege-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  .advantege-list {
+    flex-wrap: nowrap;
+  }
+  .team-list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .team-item {
+    flex-basis: calc((100%-72px) / 4);
+  }
+  .portfolio-list {
+    row-gap: 48px;
+  }
+  .portfolio-item {
+    flex-basis: calc((100% - 48px) / 3);
+  }
+}
+
+/* Mobile screen and tablet*/
+@media screen and (max-width: 1199.98px) {
+  .icon-box {
+    display: none;
+  }
 }
