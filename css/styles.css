@@ -51,7 +51,8 @@ img {
   max-width: 100%;
 }
 .section {
-  padding: 120px 0;
+  /* padding: 120px 0; */
+  padding: 96px 0;
 }
 
 /* Phone screen */
@@ -182,10 +183,9 @@ address {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("../images/people-office.jpg");
+    url("../images/Hero_mob.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-
   background-size: cover;
   background-color: var(--NAVY-BLUE);
   /* padding: 188px 0; */
@@ -194,6 +194,52 @@ address {
   max-width: 320px;
   margin: 0 auto;
 }
+@media only screen and (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/Hero_mob@2x.jpg");
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/Hero_tab.jpg");
+  }
+}
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/Hero_tab@2x.jpg");
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/Hero_desk.jpg");
+  }
+}
+@media only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/Hero_desk@2x.jpg");
+  }
+}
+
 .hero-title {
   /* max-width: 496px; */
   max-width: 288px;
@@ -718,7 +764,6 @@ address {
   justify-content: center;
   fill: transparent;
 }
-
 .modal-checkbox-input:checked + .modal-checkbox-label > .modal-checkbox-chek {
   background-color: var(--OCEAN);
   border: none;
@@ -898,6 +943,9 @@ address {
 }
 /* Desktop screen */
 @media screen and (min-width: 1200px) {
+  .section {
+    padding: 120px 0;
+  }
   .container {
     max-width: 1158px;
   }
@@ -968,9 +1016,6 @@ address {
   }
   .logo {
     padding: 16px 0;
-  }
-  .container.header-inner {
-    margin: 0;
   }
 
   .modal {

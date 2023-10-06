@@ -135,6 +135,7 @@
             <li class="team-item">
               <img
                 class="team-photo"
+                srcset="./images/mark.jpg 1x, ./images/mark@2x.jpg 2x"
                 src="./images/mark.jpg"
                 alt="Photo"
                 width="264"
@@ -178,6 +179,7 @@
             <li class="team-item">
               <img
                 class="team-photo"
+                srcset="./images/tom.jpg 1x, ./images/tom@2x.jpg 2x"
                 src="./images/tom.jpg"
                 alt="Photo"
                 width="264"
@@ -220,6 +222,7 @@
             <li class="team-item">
               <img
                 class="team-photo"
+                srcset="./images/camila.jpg 1x, ./images/camila@2x.jpg 2x"
                 src="./images/camila.jpg"
                 alt="Photo"
                 width="264"
@@ -262,6 +265,7 @@
             <li class="team-item">
               <img
                 class="team-photo"
+                srcset="./images/daniel.jpg 1x, ./images/daniel@2x.jpg 2x"
                 src="./images/daniel.jpg"
                 alt="Photo"
                 width="264"
@@ -312,7 +316,34 @@
           <ul class="portfolio-list">
             <li class="portfolio-item">
               <div class="portfolio-img">
-                <img src="./images/bank.jpg" alt="Banking app" width="360" />
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/banking_mob.jpg    1x,
+                      ./images/banking_mob@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/banking_tab.jpg    1x,
+                      ./images/banking_tab@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/banking_desk.jpg    1x,
+                      ./images/banking_desk@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/banking_mob.jpg"
+                    alt="Banking app"
+                    width="360"
+                  />
+                </picture>
 
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -328,11 +359,34 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-img">
-                <img
-                  src="./images/cash.jpg"
-                  alt="Mobile telephone"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/cashless_mob.jpg    1x,
+                      ./images/cashless_mob@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/cashless_tab.jpg    1x,
+                      ./images/cashless_tab@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/cashless_desk.jpg    1x,
+                      ./images/cashless_desk@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/cashless_mob.jpg"
+                    alt="Mobile telephone"
+                    width="360"
+                  />
+                </picture>
 
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -347,7 +401,34 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-img">
-                <img src="./images/meditation.jpg" alt="Notebook" width="360" />
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/meditation_mob.jpg    1x,
+                      ./images/meditation_mob@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/meditation_tab.jpg    1x,
+                      ./images/meditation_tab@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/meditation_desk.jpg    1x,
+                      ./images/meditation_desk@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/meditation_mob.jpg"
+                    alt="Notebook"
+                    width="360"
+                  />
+                </picture>
 
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -362,8 +443,30 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-img">
-                <img src="./images/taxi.jpg" alt="Car" width="360" />
-
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/taxi_mob.jpg    1x,
+                      ./images/taxi_mob@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/taxi_tab.jpg    1x,
+                      ./images/taxi_tab@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/taxi_desk.jpg    1x,
+                      ./images/taxi_desk@2x.jpg 2x
+                    "
+                  />
+                  <img src="./images/taxi_mob.jpg" alt="Car" width="360" />
+                </picture>
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -377,11 +480,34 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-img">
-                <img
-                  src="./images/screen.jpg"
-                  alt="Mobile screen"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/screen_mob.jpg    1x,
+                      ./images/screen_mob@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/screen_tab.jpg    1x,
+                      ./images/screen_tab@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/screen_desk.jpg    1x,
+                      ./images/screen_desk@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/screen_mob.jpg"
+                    alt="Mobile screen"
+                    width="360"
+                  />
+                </picture>
 
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -396,11 +522,34 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-img">
-                <img
-                  src="./images/online.jpg"
-                  alt="Girl with earphones"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/online_mob.jpg    1x,
+                      ./images/online_mob@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/online_tab.jpg    1x,
+                      ./images/online_tab@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/online_desk.jpg    1x,
+                      ./images/online_desk@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/online_mob.jpg"
+                    alt="Girl with earphones"
+                    width="360"
+                  />
+                </picture>
 
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
