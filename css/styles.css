@@ -992,6 +992,7 @@ address {
   .footer .container {
     flex-wrap: nowrap;
     gap: 0;
+    padding-left: 16px;
   }
   .logo-footer-block {
     margin-right: 120px;
