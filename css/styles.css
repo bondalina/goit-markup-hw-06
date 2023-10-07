@@ -58,7 +58,7 @@ img {
 /* Phone screen */
 .container {
   /* width: 1158px; */
-  max-width: 320px;
+  width: 320px;
   /* margin: 0 auto; */
   margin-left: auto;
   margin-right: auto;
@@ -91,7 +91,7 @@ img {
   justify-content: space-between;
   align-items: center;
   /* gap: 24px; */
-  /* width: 100%; */
+  width: 100%;
 }
 .header-nav {
   display: flex;
@@ -292,6 +292,7 @@ address {
   /* font-size: 20px;
   font-weight: 500; */
   font-size: 36px;
+  font-weight: 700;
   /* line-height: 1.2; 120% */
   line-height: 1.11; /* 111.111% */
   letter-spacing: 0.02em;
@@ -872,7 +873,7 @@ address {
 /* Tablet screen */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 736px;
+    width: 768px;
   }
   .header-menu-btn {
     display: none;
@@ -901,7 +902,7 @@ address {
     row-gap: 72px;
   }
   .advantege-item {
-    flex-basis: calc((100%-24px) / 2);
+    width: 356px;
   }
   .team-list {
     gap: 24px;
@@ -922,6 +923,7 @@ address {
     gap: 72px 24px;
     align-items: baseline;
     justify-content: flex-start;
+    padding-left: 108px;
   }
   .logo-footer {
     padding-left: 0;
@@ -947,7 +949,7 @@ address {
     padding: 120px 0;
   }
   .container {
-    max-width: 1158px;
+    width: 1158px;
   }
   .logo {
     margin-right: 76px;
